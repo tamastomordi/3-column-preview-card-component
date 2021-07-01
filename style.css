@@ -33,7 +33,7 @@ h1 {
 }
 
 p {
-   line-height: 1.6;
+   line-height: 1.7;
 }
 
 .container {
@@ -89,4 +89,31 @@ p {
 
 .card-dark-blue .card-cta {
    color: var(--clr-dark-blue);
+}
+
+@media screen and (min-width: 60rem) {
+   body {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+   }
+   
+   .container {
+      flex-flow: row;
+      max-width: 58rem;
+   }
+
+   .card:first-of-type {
+      border-radius: 0.5em 0 0 0.5em;
+   }
+
+   .card:last-of-type {
+      border-radius: 0 0.5em 0.5em 0;
+   }
+
+   .card-cta {
+      margin-top: 7em;
+   }
 }
