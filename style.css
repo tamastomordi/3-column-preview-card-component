@@ -126,7 +126,20 @@ p {
    }
 }
 
+@media screen and (max-width: 20rem) {
+   .container {
+      padding: 0;
+   }
+   .card {
+      padding: 2em;
+   }
+   .card-cta {
+      padding: 0.5em 1.5em;
+   }
+}
+
 .attribution { 
+   margin-top: 2em;
    font-size: 11px; text-align: center; 
    color: gray;
 }
