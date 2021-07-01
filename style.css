@@ -117,3 +117,14 @@ p {
       margin-top: 7em;
    }
 }
+
+.attribution { 
+   font-size: 11px; text-align: center; 
+   color: gray;
+}
+.attribution a { 
+   color: dimgray; 
+}
+.attribution a:hover {
+   color: var(--clr-light-blue);
+}
