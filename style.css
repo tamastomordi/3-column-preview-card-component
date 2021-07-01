@@ -1,0 +1,92 @@
+:root {
+   --clr-yellow: hsl(31, 77%, 52%);
+   --clr-light-blue: hsl(184, 100%, 22%);
+   --clr-dark-blue: hsl(179, 100%, 13%);
+
+   --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+   --clr-light-gray: hsl(0, 0%, 95%);
+
+   --fs-base: 0.9375rem;
+   --fs-h1: 2rem;
+
+   --ff-base: 'Lexend Deca', sans-serif;
+   --ff-headings: 'Big Shoulders Display', cursive;
+}
+
+body {
+   font-family: var(--ff-base);
+   font-size: var(--fs-base);
+   background: var(--clr-light-gray);
+   margin: 5em 0;
+}
+
+img {
+   width: 3.5em;
+}
+
+h1 {
+   font-family: var(--ff-headings);
+   text-transform: uppercase;
+   font-size: var(--fs-h1);
+   color: var(--clr-light-gray);
+   margin: 0.75em 0;
+}
+
+p {
+   line-height: 1.6;
+}
+
+.container {
+   display: flex;
+   flex-flow: column;
+   max-width: 24rem;
+   min-width: min-content;
+   margin: 0 auto;
+   padding: 1.5em;
+   color: var(--clr-transparent-white);
+}
+
+.card {
+   padding: 3em;
+}
+
+.card:first-of-type {
+   border-radius: 0.5em 0.5em 0 0;
+}
+
+.card:last-of-type {
+   border-radius: 0 0 0.5em 0.5em;
+}
+
+.card-cta {
+   display: block;
+   border-radius: 100vw;
+   margin-top: 2em;
+   padding: 1em 2.5em;   
+   background: var(--clr-light-gray);
+   width: max-content;
+}
+
+.card-yellow {
+   background: var(--clr-yellow);
+}
+
+.card-yellow .card-cta {
+   color: var(--clr-yellow);
+}
+
+.card-light-blue {
+   background: var(--clr-light-blue);
+}
+
+.card-light-blue .card-cta {
+   color: var(--clr-light-blue);
+}
+
+.card-dark-blue {
+   background: var(--clr-dark-blue);
+}
+
+.card-dark-blue .card-cta {
+   color: var(--clr-dark-blue);
+}
