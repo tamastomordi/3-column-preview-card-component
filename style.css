@@ -65,6 +65,14 @@ p {
    padding: 1em 2.5em;   
    background: var(--clr-light-gray);
    width: max-content;
+   border: 2px solid var(--clr-light-gray);
+   text-decoration: none;
+   transition: background 200ms ease-in-out;
+}
+
+.card-cta:hover {
+   background: transparent;
+   color: var(--clr-light-gray) !important;
 }
 
 .card-yellow {
@@ -122,9 +130,11 @@ p {
    font-size: 11px; text-align: center; 
    color: gray;
 }
+
 .attribution a { 
    color: dimgray; 
 }
+
 .attribution a:hover {
    color: var(--clr-light-blue);
 }
